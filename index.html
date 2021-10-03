@@ -9,7 +9,12 @@
   <body>
     <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
     <script>
-      console.log(returnCitySN);
+      const key = '' // 把key填在这里
+      let url = `https://sctapi.ftqq.com/${key}.send`
+      url = url + encodeURI(`?title=地址&desp=${returnCitySN.cip} ${returnCitySN.cname}`)
+      const xhr = new XMLHttpRequest()
+      xhr.open('GET', url)
+      xhr.send()
     </script>
   </body>
 </html>
