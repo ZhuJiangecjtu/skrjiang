@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
-    <script>
-      const key = '' // 把key填在这里
-      let url = `https://sctapi.ftqq.com/${key}.send`
-      url = url + encodeURI(`?title=地址&desp=${returnCitySN.cip} ${returnCitySN.cname}`)
-      const xhr = new XMLHttpRequest()
-      xhr.open('GET', url)
-      xhr.send()
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script>
+      const key = 'SCT81270T5U3m9dRrh6aZIn1hql4mCHvD' // 把key填在这里
+      let url = `https://sctapi.ftqq.com/${key}.send`
+      url = url + encodeURI(`?title=地址&desp=${returnCitySN.cip} ${returnCitySN.cname}`)
+      const xhr = new XMLHttpRequest()
+      xhr.open('GET', url)
+      xhr.send()
+    </script>
+  </body>
 </html>
